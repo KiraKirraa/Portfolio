@@ -30,6 +30,7 @@
     /* Images */
     --size-logo: 3rem;
     --size-profile: 12rem;
+    --size-snapshot: 30rem;
     
 
     /* Decorations */
@@ -37,9 +38,10 @@
     --default-rounding: .5rem;
 
     /* Background Colours */
+    --bg: skyblue;
     --bg-primary: rgb(233, 223, 177);
     --bg-secondary: rgb(179, 147, 107);
-    --bg-tertiary: lightblue;
+    --bg-tertiary: rgb(203, 170, 124);
 }
 
 /* Defaults */
@@ -121,6 +123,13 @@ div {
     /* position: relative;
     top: var(--default-padding); */
 }
+.snapshot {
+    width:100%;
+    /* max-width: var(--size-snapshot); */
+
+    border-style: none;
+    border-radius: var(--default-rounding);
+}
 
 /* Layout */
 .col {
@@ -170,7 +179,7 @@ div {
     gap: var(--default-gap)
 }
 .main {
-    background-color: var(--bg-tertiary);
+    background-color: var(--bg);
     padding: var(--default-padding);
 
     gap: var(--default-gap);
@@ -178,14 +187,35 @@ div {
 .section {
     background-color: var(--bg-primary);
     border-radius: var(--default-rounding);
+    border-style:inset;
+    border-color: var(--bg-secondary);
+
+    gap:var(--default-gap);
 
     padding: var(--default-padding);
+}
+.array {
+    gap: var(--default-gap);
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
 }
 .paragraph {
     align-content: flex-start;
     justify-content: flex-start;
 }
 .card {
-    background-color: var(--bg-secondary);
+    width: fit-content;
+    height: fit-content;
+
+    background-color: var(--bg-tertiary);
     border-radius: var(--default-rounding);
+    border-style: solid;
+    border-color: var(--bg-secondary);
+
+    padding: var(--default-padding);
+
+    gap:var(--default-gap);
+
+    align-content: flex-start;
+    justify-content: flex-start;
 }
