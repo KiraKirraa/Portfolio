@@ -1,0 +1,191 @@
+/* Import better css first */
+@import url(./normalize.css);
+
+/* Get custom font */
+@font-face {
+    font-family: piracy;
+    src: url(../assets/TradeWinds-Regular.ttf);
+}
+
+/* Variables */
+:root {
+	/* Breakpoints */
+
+    /* Text Colours*/
+    --text-primary: black;
+    --text-secondary: white;
+    --text-tertiary: green;
+    --text-unstyled: red;
+
+    /* Sizes */
+    --size-title: 2rem;
+    --size-heading: 1.5rem;
+    --size-subheading: 1.2rem;
+    --size-paragraph: 0.5rem;
+    --default-gap: 0.5rem;
+
+    /* Margins and Padding */
+    --default-padding: var(--default-gap);
+
+    /* Images */
+    --size-logo: 3rem;
+    --size-profile: 12rem;
+    
+
+    /* Decorations */
+    --shadow-title: 0rem 0rem 0.5rem black;
+    --default-rounding: .5rem;
+
+    /* Background Colours */
+    --bg-primary: rgb(233, 223, 177);
+    --bg-secondary: rgb(179, 147, 107);
+    --bg-tertiary: lightblue;
+}
+
+/* Defaults */
+div {
+    /* background-color: white; */
+    padding: 5px;
+    margin:0%;
+
+    border: 2px red;
+    border-style: inset;
+
+    background-color: yellow;
+}
+
+/* Text */
+.title { 
+    color: var(--text-secondary);
+    text-shadow: var(--shadow-title);
+
+    font-family: piracy;
+    font-size: var(--size-title);
+
+    margin: 0%;
+    padding: 0%;
+}
+.heading {
+    color: var(--text-primary);
+
+    font-size: var(--size-heading);
+
+    margin: 0%;
+    padding: 0%;
+}
+.subheading {
+    color: var(--text-primary);
+
+    font-size: var(--size-subheading);
+
+    margin: 0%;
+    padding: 0%;
+}
+.text {
+    color: var(--text-primary);
+
+    font-size: var(size-paragraph);
+
+    margin: 0%;
+    padding: 0%;
+}
+.navlink{
+    color: var(--text-secondary);
+
+    font-size: var(--size-subheading);
+}
+
+/* Menus */
+.link-list {
+    display: flex;
+
+    list-style: none;
+    gap: var(--default-gap);
+
+    margin: auto;
+    padding: 0%;
+}
+
+/* Images */
+.logo {
+    width: var(--size-logo);
+
+    margin: auto;
+}
+.profile {
+    width: var(--size-profile);
+
+    margin: 0%;
+
+    /* Push to bottom of section */
+    /* position: relative;
+    top: var(--default-padding); */
+}
+
+/* Layout */
+.col {
+    background-color: transparent;
+    border-style: none;
+
+    padding: 0%;
+    margin: 0%;
+
+    display:flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: center;
+}
+.row {
+    background-color: transparent;
+    border-style: none;
+
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    justify-content: center;
+
+    /* flex-wrap: wrap; */
+}
+
+/* Look */
+.navbar {
+    background-color: var(--bg-secondary);
+    border-style: none;
+
+    padding: var(--default-padding);
+
+    display: flex;
+    align-items: center;
+
+    /* TODO: make this space-around after wrapping */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.brand {
+    gap: var(--default-gap)
+}
+.main {
+    background-color: var(--bg-tertiary);
+    padding: var(--default-padding);
+
+    gap: var(--default-gap);
+}
+.section {
+    background-color: var(--bg-primary);
+    border-radius: var(--default-rounding);
+
+    padding: var(--default-padding);
+}
+.paragraph {
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+.card {
+    background-color: var(--bg-secondary);
+    border-radius: var(--default-rounding);
+}
