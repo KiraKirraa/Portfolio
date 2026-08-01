@@ -29,7 +29,7 @@
 
     /* Images */
     --size-logo: 3rem;
-    --size-profile: 12rem;
+    --size-profile: 20rem;
     --size-snapshot: 30rem;
     
 
@@ -125,7 +125,7 @@ div {
 }
 .snapshot {
     width:100%;
-    /* max-width: var(--size-snapshot); */
+    max-width: var(--size-snapshot);
 
     border-style: none;
     border-radius: var(--default-rounding);
