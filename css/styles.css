@@ -4,218 +4,164 @@
 /* Get custom font */
 @font-face {
     font-family: piracy;
-    src: url(../assets/TradeWinds-Regular.ttf);
+    src: url(../assets/brand/TradeWinds-Regular.ttf);
 }
 
-/* Variables */
 :root {
-	/* Breakpoints */
+    /* font-size: 20px; */
+    min-width: 300px;
+
+	/* Layout */
+    --default-border: none;
+    --default-border-colour: red;
+
+    --default-padding: 0.5rem;
+    --default-gap: 0.5rem;
 
     /* Text Colours*/
     --text-primary: black;
-    --text-secondary: white;
-    --text-tertiary: green;
-    --text-unstyled: red;
 
-    /* Sizes */
-    --size-title: 2rem;
-    --size-heading: 1.5rem;
-    --size-subheading: 1.2rem;
-    --size-paragraph: 0.5rem;
-    --default-gap: 0.5rem;
-
-    /* Margins and Padding */
-    --default-padding: var(--default-gap);
-
-    /* Images */
-    --size-logo: 3rem;
-    --size-profile: 20rem;
-    --size-snapshot: 30rem;
-    
+    /* Theme Colours */
+    --theme-primary: white;
 
     /* Decorations */
-    --shadow-title: 0rem 0rem 0.5rem black;
-    --default-rounding: .5rem;
+    --default-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    --default-shadow-hover: 0px 5px 5px rgba(0,0,0,.5);
 
-    /* Background Colours */
-    --bg: skyblue;
-    --bg-primary: rgb(233, 223, 177);
-    --bg-secondary: rgb(179, 147, 107);
-    --bg-tertiary: rgb(203, 170, 124);
+    /* Logo/Navbar */
+    --logo-width:3rem;
+
+    /* Highlight */
+    --highlight-height: 10rem;
+    --highlight-padding: 2rem;
+    --highlight-image:url(../assets/project_images/project_deluxe.png);
+    --highlight-logo-width: 20rem;
+    --highlight-gap: 2rem;
+
+    /* Cards */
+    --card-min-width: 10rem;
+    
+    /* Animations */
+    scroll-behavior:smooth;
+    --default-transtion: transform .2s;
+    --card-hover-translate: 0px, -10px;
+    --link-hover-scale: 2;
 }
 
-/* Defaults */
 div {
-    /* background-color: white; */
-    padding: 5px;
-    margin:0%;
-
-    border: 2px red;
-    border-style: inset;
-
-    background-color: yellow;
+    border-color: var(--default-border-colour);
+    border-style: var(--default-border);
+    /* padding: var(--default-padding); */
+    transition: var(--default-transtion); 
+    z-index: 0;
 }
 
 /* Text */
-.title { 
-    color: var(--text-secondary);
-    text-shadow: var(--shadow-title);
-
+.title {
     font-family: piracy;
-    font-size: var(--size-title);
-
     margin: 0%;
-    padding: 0%;
-}
-.heading {
-    color: var(--text-primary);
-
-    font-size: var(--size-heading);
-
-    margin: 0%;
-    padding: 0%;
-}
-.subheading {
-    color: var(--text-primary);
-
-    font-size: var(--size-subheading);
-
-    margin: 0%;
-    padding: 0%;
-}
-.text {
-    color: var(--text-primary);
-
-    font-size: var(size-paragraph);
-
-    margin: 0%;
-    padding: 0%;
-}
-.navlink{
-    color: var(--text-secondary);
-
-    font-size: var(--size-subheading);
-}
-
-/* Menus */
-.link-list {
-    display: flex;
-
-    list-style: none;
-    gap: var(--default-gap);
-
-    margin: auto;
-    padding: 0%;
 }
 
 /* Images */
 .logo {
-    width: var(--size-logo);
+    width: var(--logo-width)
 
-    margin: auto;
-}
-.profile {
-    width: var(--size-profile);
-
-    margin: 0%;
-
-    /* Push to bottom of section */
-    /* position: relative;
-    top: var(--default-padding); */
-}
-.snapshot {
-    width:100%;
-    max-width: var(--size-snapshot);
-
-    border-style: none;
-    border-radius: var(--default-rounding);
 }
 
-/* Layout */
-.col {
-    background-color: transparent;
-    border-style: none;
+/* Defaults */
+.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap:var(--default-gap);
+}
+.section {
+    padding: var(--default-padding);
+}
 
-    padding: 0%;
-    margin: 0%;
+/* Unique Stylings */
+.void {
+    background-color: rgb(222,189, 124);
+}
+.navbar {
+    position: sticky; 
+    top: 0;
+    z-index: 3;
 
-    display:flex;
-    flex-direction: column;
+    background-color: var(--theme-primary);
+    box-shadow: var(--default-shadow);
 
+    padding: var(--default-padding);
+
+    flex-direction: row;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;   
 }
-.row {
-    background-color: transparent;
-    border-style: none;
 
-    padding: 0%;
-    margin: 0%;
+.highlight {
+    min-height: var(--highlight-height);
+
+    background-image:var(--highlight-image); 
+    background-size:cover;
+    background-position: center;
 
     display: flex;
     flex-direction: row;
-
-    align-content: center;
-    justify-content: center;
-
-    /* flex-wrap: wrap; */
-}
-
-/* Look */
-.navbar {
-    background-color: var(--bg-secondary);
-    border-style: none;
-
-    padding: var(--default-padding);
-
-    display: flex;
-    align-items: center;
-
-    /* TODO: make this space-around after wrapping */
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.brand {
-    gap: var(--default-gap)
-}
-.main {
-    background-color: var(--bg);
-    padding: var(--default-padding);
-
-    gap: var(--default-gap);
-}
-.section {
-    background-color: var(--bg-primary);
-    border-radius: var(--default-rounding);
-    border-style:inset;
-    border-color: var(--bg-secondary);
-
-    gap:var(--default-gap);
-
-    padding: var(--default-padding);
-}
-.array {
-    gap: var(--default-gap);
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
+
+    padding: var(--highlight-padding);
+    gap:var(--highlight-gap);
 }
-.paragraph {
-    align-content: flex-start;
-    justify-content: flex-start;
+.highlight-logo {
+    width:100%;
+    max-width: var(--highlight-logo-width);
+    align-self: center;
 }
-.card {
-    width: fit-content;
+.highlight-link {
     height: fit-content;
+    width: fit-content;
+    align-self: flex-end;
+}
 
-    background-color: var(--bg-tertiary);
-    border-radius: var(--default-rounding);
-    border-style: solid;
-    border-color: var(--bg-secondary);
 
-    padding: var(--default-padding);
+.content {
+    background-image: url(../assets/brand/bg_spread.png); 
+    background-size: cover;
+    background-position: center;
 
-    gap:var(--default-gap);
+    z-index: -1;
+}
+/* Cards */
+.card {
+    flex: 1; 
+}
+.card-image {
+    width: 100%; 
+    min-width: var(--card-min-width);
+}
 
-    align-content: flex-start;
-    justify-content: flex-start;
+
+.clickable {
+    box-shadow: var(--default-shadow);
+}
+.clickable:hover {
+    transform: translate(var(--card-hover-translate));
+    z-index: 2;
+
+    box-shadow: var(--default-shadow-hover);
+}
+
+/* Small view */
+@media screen and (max-width: 540px) {
+    /* Navbar display to col */
+    .navbar {
+        flex-direction: column;
+    }
+
+    .highlight {
+        flex-direction: column;
+    }
+
+    .highlight-link {
+        align-self: center;
+    }
 }

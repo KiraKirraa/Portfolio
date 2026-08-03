@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <!-- Header -->
     <head>
@@ -10,91 +10,69 @@
         <link rel="stylesheet" href="css/styles.css" />
 
         <!-- Icon and Title -->
-        <title>Kira's Quarters</title>
-        <link rel="icon" href="assets/logo_white.png" />
+        <title>Cape Kira</title>
+        <link rel="icon" href="assets/brand/logo_white.svg" />
     </head>
 
-    <!-- Body -->
-    <body>
-        <!-- Division for navbar (row) -->
-        <div class="navbar">
-            <!-- Division for logo and title (col) -->
-            <div class="row brand">
-                <!-- Division for logo (col) -->
-                <div class="col">
-                    <!-- Logo -->
-                    <img class="logo" src="assets/logo_white.png" alt="Kira's Quarters Logo">
+    <!-- Content -->
+    <body class="void">
+        <div id="top"></div>
+        <div id="navbar" class="navbar container">
+            <div class="container">
+                <div>
+                    <a href="#top">
+                        <img class="logo" src="assets/brand/logo_black.svg" alt="Cape Kira Logo">
+                    </a>
                 </div>
-                <!-- Division for title (col) -->
-                <div class="col">
-                    <!-- Title -->
-                    <h1 class="title">Kira's Quarters</h1>
+                <div>
+                    <h1 class="title">Cape Kira</h1>
                 </div>
             </div>
-            
-            <!-- Division for links (col)-->
-            <div class="row">
-                <ul class="link-list">
-                    <li><a class="navlink" href="#home">Home</a></li>
-                    <li><a class="navlink" href="#projects">Projects/Jobs</a></li>
-                    <li><a class="navlink" href="#contact">Contact</a></li>
-                </ul>   
+            <div>
+                menu
             </div>
         </div>
 
-        <!-- Main Content -->
-        <div class="col main">
-            <!-- Home and About Me Section (main) -->
-            <div class="row section">
-                <!-- Division for profile picture (col) -->
-                <div class="col">
-                    <!-- Picture -->
-                    <img class="profile" src="assets/profile.png" alt="Profile Picture">
+        <!-- Highlight -->
+        <div class="highlight section">
+            <img class="highlight-logo" src="assets/highlight/highlight_logo.svg" alt="Project Deluxe Logo">
+            <button class="highlight-link">Learn More</button>
+        </div>
+
+        <!-- Content -->
+        <div id="home" class="content">
+            <!-- About Me -->
+            <div class="section">
+                <div style="display: flex; flex-direction: column; justify-content: center; align-content: center;">
+                    <div style="display: flex; justify-content: center; align-content: flex-start;">
+                        <img src="assets/brand/profile.png" alt="Profile Picture" style="max-width: 10rem;">
+                        <h1 class="title">Kira <br> Kowaltschuk</h1>
+                    </div>
+                    <div>
+                        text goes here lol
+                    </div>
                 </div>
-                <!-- Division for title and text (col) -->
-                <div class="col paragraph">
-                    <!-- Title -->
-                    <h2 class="heading">ABOUT ME</h2>
-                    <!-- Text -->
-                    <p class="text">TODO: FIGURE OUT HOW TO MODIFY THIS FOR SMALL SCREENS. Praesent nisl tortor, laoreet eu, dapibus quis, egestas non, mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eleifend pharetra felis. Mauris nibh velit, tristique ac, lacinia in, scelerisque et, ante. Praesent nisl tortor, laoreet eu, dapibus quis, egestas non, mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eleifend pharetra felis. Mauris nibh velit, tristique ac, lacinia in, scelerisque et, ante. Praesent nisl tortor, laoreet eu, dapibus quis, egestas non, mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eleifend pharetra felis. Mauris nibh velit, tristique ac, lacinia in, scelerisque et, ante. Praesent nisl tortor, laoreet eu, dapibus quis, egestas non, mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eleifend pharetra felis. Mauris nibh velit, tristique ac, lacinia in, scelerisque et, ante.</p>
-                </div>
+
             </div>
 
-            <!-- Projects and Jobs (main) -->
-            <div class="col section">
-                <!-- Division for title (row) -->
-                <div class="row paragraph">
-                    <!-- Title -->
-                    <h2 class="heading">PROJECTS AND JOBS</h2>
-                </div>
-                <!-- Divsion for projects (row) -->
-                <div class="row array">
-                    <!-- First Project (col) -->
-                    <div class="col card">
-                        <h2 class="subheading">Census Analysis Co-op</h2>
-                        <img class="snapshot" src="assets/census_pic.jpg" alt="Project Deluxe Snapshot">
+            <!-- Experience -->
+            <div class="section">
+                <h1 class="title">Experience</h1>
+                <div class="container">
+                    <div class="clickable card">
+                        Census Analysis Co-op
+                        <img class="card-image" src="assets/project_images/project_deluxe.png" alt="">
                     </div>
-                    <!-- First Project (col) -->
-                    <div class="col card">
-                        <h2 class="subheading">Project Deluxe</h2>
-                        <img class="snapshot" src="assets/project_deluxe.png" alt="Project Deluxe Snapshot">
+                    <div class="clickable card">
+                        Project Deluxe
+                        <img class="card-image" src="assets/project_images/project_deluxe.png" alt="">
                     </div>
                 </div>
             </div>
 
-            <!-- Contact (main) -->
-            <div class="row section">
-                <!-- Title -->
-                <h2 class="heading">Contact Me:</h2>
-                <!-- List for info -->
-                <ul class="link-list">
-                    <li>
-                        <a href="https://github.com/KiraKirraa">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://ca.linkedin.com/in/kirakirraa">LinkedIn</a>
-                    </li>
-                </ul>
+            <!-- Contact Info -->
+            <div class="section">
+                <h1 class="title">Get in touch</h1>
             </div>
         </div>
     </body>
