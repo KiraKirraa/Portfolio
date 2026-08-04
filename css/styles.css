@@ -128,7 +128,7 @@ a {
 
 /* Page */
 .void {
-    background-color: rgb(222,189, 124);
+    background-color: rgb(220,180, 120);
 }
 
 /* Navbar */
@@ -153,8 +153,8 @@ a {
 
 /* Highlight */
 .highlight {
-    height:100vw;
-    max-height: 100vh;
+    /* height:100vw; */
+    max-height: 80vh;
 
     background-image:var(--highlight-image); 
     background-size:cover;
@@ -164,8 +164,12 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
 
-    padding: var(--highlight-padding);
-    gap:var(--highlight-gap);
+    padding: 40px;
+    gap:var(--default-gap);
+}
+.highlight-logo {
+    width: 70%;
+    max-width: 30rem;
 }
 
 /* Body */
