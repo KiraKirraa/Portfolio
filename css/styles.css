@@ -39,6 +39,9 @@
     --highlight-logo-width: 20rem;
     --highlight-gap: 2rem;
 
+    /* Profile */
+    --profile-min-width: 10rem;
+
     /* Cards */
     --card-min-width: 20rem;
     
@@ -73,9 +76,6 @@ div {
     flex-wrap: wrap; 
     gap:var(--default-gap);
 }
-.section {
-    padding: var(--default-padding);
-}
 
 /* Unique Stylings */
 .void {
@@ -99,6 +99,30 @@ div {
     width: var(--logo-width)
 }
 
+/* Body */
+.content {
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: center;
+
+    gap:var(--default-gap);
+
+    background-image: url(../assets/brand/bg_spread.png); 
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+}
+.section {
+    padding: var(--default-padding);
+    width:80%;
+    align-self: center;
+}
+
+
+/* Highlight */
 .highlight {
     min-height: var(--highlight-height);
 
@@ -124,31 +148,10 @@ div {
     align-self: flex-end;
 }
 
-
-.content {
-    background-image: url(../assets/brand/bg_spread.png); 
-    background-size: cover;
-    background-position: center;
-
-    z-index: -1;
-}
 /* About me */
-.spacer {
-    flex: 1;
-}
 .profile {
-    max-width: 80%;  
-    flex-direction: row; 
-    align-content: center; 
-    justify-content: center; 
-    flex-wrap: wrap;
-}
-.profile-image {
-    flex-direction: column; 
-    flex:2;
-}
-.profile-text {
-    
+    width: 100%;
+    min-width: var(--profile-min-width);
 }
 
 
@@ -179,20 +182,7 @@ div {
         flex-direction: column;
     }
 
-    .highlight {
-        flex-direction: column;
-    }
-    .highlight-link {
-        align-self: center;
-    }
-
-    .spacer {
-        flex:0;
-    }
     .profile {
         flex-direction: column;
-    }
-    .profile-text {
-
     }
 }
