@@ -20,17 +20,11 @@
         <div id="top"></div>
 
         <!--  Navbar -->
-        <div id="navbar" class="navbar container">
-            <div class="container">
-                <div>
-                    <a href="#top">
-                        <img class="logo" src="assets/brand/logo_black.svg" alt="Cape Kira Logo">
-                    </a>
-                </div>
-                <div>
-                    <h1 class="title">Cape Kira</h1>
-                </div>
-            </div>
+        <div id="navbar" class="navbar row">
+                <a class="row" style="align-items: flex-end;" href="#top">
+                    <img class="logo col" src="assets/brand/logo_black.svg" alt="Cape Kira Logo">
+                    <h1 class="title col">Cape Kira</h1>
+                </a>
             <div>
                 menu
             </div>
@@ -39,39 +33,40 @@
 
         <div class="highlight">
             <!-- Highlight -->
-            <div class="section">
-                <img src="assets/highlight/highlight_logo.svg" alt="Project Deluxe Logo">
+            <div class="row section">
+                <img src="assets/highlight/highlight_logo.svg" alt="Project Deluxe Logo" style="height: 100%;">
                 <button>Learn More</button>
             </div>
         </div>
-        
-        <!-- divider -->
-        <div>
-            DIVIDING SECTION
-        </div>
 
         <!-- Main content -->
-        <div class="content">
-            <!-- About Me -->
-            <div class="section container" style="align-items: center; justify-content: center;">
-                <div class="container" style="flex:1">
-                    <img class="profile" src="assets/brand/profile.png" alt="Profile Picture" >
-                </div>
-                <div style="flex: 3">
-                    <h1 class="title">Kira Kowaltschuk</h1>
-                    I'm a programmer and artist based in Ontario. I specialize in graphics programming, graphic design, and 3d art. I'm also very fond of pirates.
-                </div>
-            </div>
+        <div class="content col">
 
             <!-- divider -->
             <div>
                 DIVIDING SECTION
             </div>
 
+            <!-- About Me -->
+            <div class="row section">
+                <div class="col" style="flex:1">
+                    <img class="profile" src="assets/brand/profile.png" alt="Profile Picture" >
+                </div>
+                <div class="col" style="flex: 3">
+                    <h1 class="row heading">Kira Kowaltschuk</h1>
+                    <p class="row text">I'm a programmer and artist currently based in Ontario. I'm an avid traveller, and I'm on the lookout for international oppourtunities </p>
+                </div>
+            </div>
+
+            <!-- divider -->
+            <div>
+                <h1 class="heading">_ _ _</h1>
+            </div>
+
             <!-- Experience -->
-            <div class="section">
-                <h1 class="title">Experience</h1>
-                <div class="container">
+            <div class="col section">
+                <h1 class="row heading">Experience</h1>
+                <div class="row">
                     <div class="clickable card">
                         Census Analysis Co-op
                         <img class="card-image" src="assets/project_images/project_deluxe.png" alt="">
@@ -85,13 +80,37 @@
 
             <!-- divider -->
             <div>
-                DIVIDING SECTION
+                <h1 class="heading">_ _ _</h1>
             </div>
 
             <!-- Contact Info -->
-            <div class="section">
-                <h1 class="title">Get in touch</h1>
+            <div class="row section" style="align-items: flex-start;">
+                <div class="spacer"></div>
+                <div class="col" style="flex: 1;">
+                    <h1 class="row heading">Get in touch</h1>
+                    <p class="row text">LINKS WILL GO HERE</p>
+                </div>
+                <div class="col" style="flex:1">
+                    <img class="profile" src="assets/models/bottle.png" alt="Profile Picture" >
+                </div>
+                <div class="spacer"></div>
             </div>
+
+            <!-- Footer -->
+            <p class="section" style="text-align:center">
+                Fonts by "Slideshow"
+                <br>
+                <br>
+                The entirety of content on this site, art and code included, was human-made by myself without the use of Generative AI.
+                <br>
+                <br>
+                No person or entity may copy, scrape, download, harvest, index, mine, reproduce, use, store, or process any portion of this website or its contents for purposes of training, developing, improving, or operating any artificial intelligence, machine learning, large language model, dataset, or automated decision-making system.
+                <br>
+                <br>
+                © 2026 Kira Kowaltschuk. All Rights Reserved.
+            </p>
+            
+            
         </div>
     </body>
 </html>
