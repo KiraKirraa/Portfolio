@@ -13,18 +13,18 @@
 
     /* Text Colours*/
     --text-primary: black;
-    --text-secondary: black;
+    --text-secondary: white;
 
     /* Theme Colours */
-    --theme-primary: white;
-    --theme-secondary: grey;
+    --theme-primary: rgb(217,179,104);
+    --theme-secondary: rgb(173, 73, 47);
 
     /* Gaps */
     --default-padding: 0.5rem;
     --default-gap: 0.7rem;
 
     /* Decorations */
-    --default-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    --default-shadow: 0px 0px 5px rgba(0,0,0,1);
     --default-text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
 
     /* Animations */
@@ -131,7 +131,7 @@ a {
 
 /* Page */
 .void {
-    background-color: rgb(220,180, 120);
+    background-color:var(--theme-secondary)
 }
 
 /* Navbar */
@@ -151,7 +151,7 @@ a {
 }
 .logo {
     width: var(--logo-width);
-    top: 10px;
+    margin-top: -5px;
 }
 
 /* Highlight */
@@ -193,6 +193,8 @@ a {
     height:2rem;
     overflow: hidden;
 
+    filter: drop-shadow(5px 5px 5px #222);
+ 
     margin-top: -1rem;
 }
 
