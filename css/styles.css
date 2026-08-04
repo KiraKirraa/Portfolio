@@ -16,8 +16,8 @@
     --text-secondary: white;
 
     /* Theme Colours */
-    --theme-primary: rgb(217,179,104);
-    --theme-secondary: rgb(173, 73, 47);
+    --theme-colour-primary: rgb(217,179,104);
+    --theme-colour-secondary: rgb(173, 73, 47);
 
     /* Gaps */
     --default-padding: 0.5rem;
@@ -131,7 +131,7 @@ a {
 
 /* Page */
 .void {
-    background-color:var(--theme-secondary)
+    background-color:var(--theme-colour-secondary);
 }
 
 /* Navbar */
@@ -140,7 +140,7 @@ a {
     top: 0;
     z-index: 3;
 
-    background-color: var(--theme-secondary);
+    background-color: var(--theme-colour-secondary);
     box-shadow: var(--default-shadow);
 
     padding: var(--default-padding);
@@ -228,9 +228,6 @@ a {
 
 /* Small view */
 @media screen and (max-width: 540px) {
-    :root {
-        /* width: 540px; */
-    }
 
     /* Navbar display to col */
     .navbar {
