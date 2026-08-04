@@ -71,6 +71,7 @@ a {
     margin: 0%;
 }
 .heading {
+    color: var(--text-primary);
     text-wrap: nowrap;
 
     font-family: piracy;
@@ -81,11 +82,13 @@ a {
     margin: 0%;    
 }
 .subheading {
+    color: var(--text-primary);
     font-family: arial;
     font-size: 2rem;
 }
 .text {
-    font-family: piracy;
+    color: var(--text-primary);
+
     font-size: 1rem;
 
     text-shadow: var(--default-text-shadow);
@@ -93,6 +96,15 @@ a {
     margin: 0%;  
 
     text-align: center;
+}
+.text-link {
+    color: var(--text-secondary);
+
+    font-size: 1.2rem;
+
+    margin: 0%;
+
+    text-decoration: none;
 }
 
 /* Utility */
@@ -120,6 +132,15 @@ a {
 .section {
     padding: var(--default-padding);
     width:80%;
+}
+.button {
+    padding: var(--default-padding);
+
+    background-color: var(--theme-colour-secondary);
+    border: var(--theme-colour-secondary);
+
+    border-style: inset;
+    border-radius: var(--default-padding);
 }
 .clickable {
     box-shadow: var(--default-shadow);
@@ -155,6 +176,13 @@ a {
     justify-content: space-between;   
 
     margin-bottom: -2rem;
+}
+.navbar-links {
+    list-style: none; 
+    margin:0%;
+    margin-inline: var(--default-padding);
+    padding:0%; 
+    justify-content:space-evenly;
 }
 .logo {
     width: var(--logo-width);
@@ -239,6 +267,8 @@ a {
     /* Navbar display to col */
     .navbar {
         flex-direction: column;
+
+
     }
 
     .spacer {
