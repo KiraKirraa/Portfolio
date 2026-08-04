@@ -173,6 +173,7 @@ a {
     gap:var(--default-gap);
 }
 .highlight-logo {
+    /* TODO: Make this cleaner */
     width: auto;
     max-width: 80vw;
     min-width: 200px;
@@ -184,6 +185,7 @@ a {
     background-size: auto 100%;
 
     width: 100vw;
+    /* Todo: make this cleaner */
     min-width: 540px;
     height:5vh;
     overflow: hidden;
