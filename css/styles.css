@@ -174,21 +174,26 @@ a {
 }
 .highlight-logo {
     /* TODO: Make this cleaner */
-    width: auto;
-    max-width: 80vw;
+    width: 100%;
+    max-width: 40rem;
     /* min-width: 200px; */
-    max-height: 30vh;
+    max-height: 50rem;
 }
 .divider {
     background-image: url(../assets/highlight/divider.png);
     background-repeat: repeat;
     background-size: auto 100%;
 
-    width: 100vw;
-    height:5vh;
+    justify-self: flex-start;
+
+    padding: 0%;
+    margin: auto;
+
+    width: 100%;
+    height:2rem;
     overflow: hidden;
 
-    margin-top: -2rem;
+    margin-top: -1rem;
 }
 
 /* Body */
