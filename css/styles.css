@@ -165,9 +165,9 @@ a {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 
-    padding: 20px;
+    /* padding: 20px; */
     padding-bottom: 4rem;
     padding-top: 4rem;
     gap:var(--default-gap);
@@ -176,7 +176,7 @@ a {
     /* TODO: Make this cleaner */
     width: auto;
     max-width: 80vw;
-    min-width: 200px;
+    /* min-width: 200px; */
     max-height: 30vh;
 }
 .divider {
@@ -185,8 +185,6 @@ a {
     background-size: auto 100%;
 
     width: 100vw;
-    /* Todo: make this cleaner */
-    min-width: 540px;
     height:5vh;
     overflow: hidden;
 
