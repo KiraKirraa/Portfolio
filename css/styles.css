@@ -6,6 +6,10 @@
     font-family: piracy;
     src: url(../assets/brand/TradeWinds-Regular.ttf);
 }
+@font-face {
+    font-family: merienda;
+    src: url(../assets/brand/Merienda.ttf);
+}
 
 :root {
     min-width: 300px;
@@ -18,6 +22,7 @@
     /* Theme Colours */
     --theme-colour-primary: rgb(217,179,104);
     --theme-colour-secondary: rgb(173, 73, 47);
+    --theme-colour-tertiary: rgb(237, 218, 178);
 
     /* Gaps */
     --default-padding: 0.5rem;
@@ -25,7 +30,7 @@
 
     /* Decorations */
     --default-shadow: 0px 0px 5px rgba(0,0,0,1);
-    --default-text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+    --default-text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
 
     /* Animations */
     --default-transtion: transform .2s;
@@ -82,25 +87,30 @@ a {
     margin: 0%;    
 }
 .subheading {
-    color: var(--text-primary);
-    font-family: arial;
+    font-family: merienda;
     font-size: 2rem;
-}
-.text {
+
     color: var(--text-primary);
 
-    font-size: 1rem;
+    margin: 0%;
+}
+.text {
+    font-family: merienda;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    color: var(--text-primary);
 
     text-shadow: var(--default-text-shadow);
 
-    margin: 0%;  
-
+    margin: 0%;
     text-align: center;
 }
 .text-link {
-    color: var(--text-secondary);
+    font-family: merienda;
+    font-size: 1.3rem;
 
-    font-size: 1.2rem;
+    color: var(--text-secondary);
 
     margin: 0%;
 
@@ -252,7 +262,7 @@ a {
 .card {
     flex: 1;
 
-    background-color: beige;
+    background-color: var(--theme-colour-tertiary);
     padding: var(--default-padding);
 }
 .card-image {
