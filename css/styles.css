@@ -30,7 +30,7 @@
 
     /* Decorations */
     --default-shadow: 0px 0px 5px rgba(0,0,0,1);
-    --default-text-shadow: 0px 0px 1.3px rgb(59, 43, 0);
+    --default-text-shadow: 0px 0px 20px rgb(250, 249, 246);
 
     /* Animations */
     --default-transtion: transform .2s;
@@ -97,11 +97,14 @@ a {
 .text {
     font-family: merienda;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: bold;
+    font-style: italic;
 
     color: var(--text-primary);
 
     text-shadow: var(--default-text-shadow);
+
+    
 
     margin: 0%;
     text-align: center;
