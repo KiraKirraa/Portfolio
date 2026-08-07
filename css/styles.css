@@ -52,7 +52,7 @@
 
     /* Cards */
     --card-min-width: 20rem;
-    --card-gradient: radial-gradient(rgb(226, 219, 207) 70%, rgb(233, 211, 168));
+    --card-gradient: radial-gradient(rgb(255, 246, 231) 70%, rgb(233, 211, 168));
 
     
 }
@@ -273,16 +273,14 @@ a {
 .card-image {
     width: 100%; 
     min-width: var(--card-min-width);
+    aspect-ratio: 7 / 4;
 
     filter: sepia();
-}
-.modal {
-    backdrop-filter: brightness(50%);
 }
 
 
 /* Small view */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
 
     /* Navbar display to col */
     .navbar {
