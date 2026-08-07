@@ -22,14 +22,13 @@
     /* Theme Colours */
     --theme-colour-primary: rgb(217,179,104);
     --theme-colour-secondary: rgb(173, 73, 47);
-    --theme-colour-tertiary: rgb(237, 218, 178);
 
     /* Gaps */
     --default-padding: 0.5rem;
     --default-gap: 0.7rem;
 
     /* Decorations */
-    --default-shadow: 0px 0px 5px rgba(0,0,0,1);
+    --default-shadow: 0px 0px 2px rgba(0,0,0,1);
     --default-text-shadow: 0px 0px 20px rgb(250, 249, 246);
 
     /* Animations */
@@ -53,6 +52,9 @@
 
     /* Cards */
     --card-min-width: 20rem;
+    --card-gradient: radial-gradient(rgb(226, 219, 207) 70%, rgb(233, 211, 168));
+
+    
 }
 
 div {
@@ -64,6 +66,7 @@ div {
 }
 a {
     text-decoration: none;
+    transition: var(--default-transtion); 
 }
 
 /* Text */
@@ -103,8 +106,6 @@ a {
     color: var(--text-primary);
 
     text-shadow: var(--default-text-shadow);
-
-    
 
     margin: 0%;
     text-align: center;
@@ -265,12 +266,18 @@ a {
 .card {
     flex: 1;
 
-    background-color: var(--theme-colour-tertiary);
+    background-image: var(--card-gradient);
     padding: var(--default-padding);
+
 }
 .card-image {
     width: 100%; 
     min-width: var(--card-min-width);
+
+    filter: sepia();
+}
+.modal {
+    backdrop-filter: brightness(50%);
 }
 
 
